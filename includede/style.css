@@ -1,0 +1,15 @@
+nav{
+    color: aliceblue !important ;
+    background-color: rgb(105, 62, 145) !important;
+    }
+
+.nav-link,.nav-item,.navbar-brand{
+    color: aliceblue;
+}
+.nav-link:hover,.nav-item:hover,.navbar-brand:hover{
+    color: rgb(195, 148, 238);
+}
+.i{
+    background-color: aqua;
+    size: 300px !important;
+}

@@ -1,0 +1,19 @@
+/* body{
+    background-color: 
+} */
+.navbar{
+    background-color: rgb(110, 51, 168) !important;
+    
+}
+/* design the search button in the nava bar  */
+.btn:hover{
+    background-color: rgb(205, 184, 243) !important ;
+}
+
+
+
+a{
+    color: white !important;
+}
+
+/* here style the regiter file .. */

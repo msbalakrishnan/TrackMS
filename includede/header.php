@@ -27,7 +27,12 @@
 a{
     color: white !important;
 }
+body{
+  background-color: rgb(220, 215, 230) !important ;
 
+    /* background-color: rgb(210, 189, 250) !important ; */
+  /* background-color: rgb(184, 168, 214) !important ; */
+    }
 
 
 /* regier form style .. */
@@ -54,17 +59,19 @@ background-color: rgb(238, 87, 87) ;
   border:solid 4px blueviolet;
   padding:30px;
   border-radius:   20px;
+  box-shadow: 0px 0px 50px rgb(222, 138, 255),  0px 0px 50px rgb(222, 138, 255), 0px 0px 50px rgb(222, 138, 255);
 }
 
 <?php
 if(isset($title)){
-  if ($title=="register"){
+  if ($title=="register" or $title=="login"){
     echo" .center form{
       background-image: linear-gradient(45deg, rgba(143, 64, 240,0.2) 0%, rgba(143, 64, 240,0.2) 16.667%,rgba(124, 44, 236,0.2) 16.667%, rgba(124, 44, 236,0.2) 33.334%,rgba(161, 85, 244,0.2) 33.334%, rgba(161, 85, 244,0.2) 50.001%,rgba(198, 125, 252,0.2) 50.001%, rgba(198, 125, 252,0.2) 66.668%,rgba(180, 105, 248,0.2) 66.668%, rgba(180, 105, 248,0.2) 83.335%,rgba(106, 24, 232,0.2) 83.335%, rgba(106, 24, 232,0.2) 100.002%),linear-gradient(22.5deg, rgba(143, 64, 240,0.2) 0%, rgba(143, 64, 240,0.2) 16.667%,rgba(124, 44, 236,0.2) 16.667%, rgba(124, 44, 236,0.2) 33.334%,rgba(161, 85, 244,0.2) 33.334%, rgba(161, 85, 244,0.2) 50.001%,rgba(198, 125, 252,0.2) 50.001%, rgba(198, 125, 252,0.2) 66.668%,rgba(180, 105, 248,0.2) 66.668%, rgba(180, 105, 248,0.2) 83.335%,rgba(106, 24, 232,0.2) 83.335%, rgba(106, 24, 232,0.2) 100.002%),linear-gradient(0deg, rgba(143, 64, 240,0.2) 0%, rgba(143, 64, 240,0.2) 16.667%,rgba(124, 44, 236,0.2) 16.667%, rgba(124, 44, 236,0.2) 33.334%,rgba(161, 85, 244,0.2) 33.334%, rgba(161, 85, 244,0.2) 50.001%,rgba(198, 125, 252,0.2) 50.001%, rgba(198, 125, 252,0.2) 66.668%,rgba(180, 105, 248,0.2) 66.668%, rgba(180, 105, 248,0.2) 83.335%,rgba(106, 24, 232,0.2) 83.335%, rgba(106, 24, 232,0.2) 100.002%),linear-gradient(90deg, rgb(179, 179, 179),rgb(96, 96, 96));
       
     }
     body{
-      background-color: rgb(205, 184, 243);
+      background-color: rgb(220, 215, 230) !important ;
+
     }
     
     ";
@@ -88,18 +95,24 @@ if(isset($title)){
 <body class='body'>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.php">TrackMS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="login.php">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="regester.php">Register</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="login.php">Settings</a>
+        </li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

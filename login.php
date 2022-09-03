@@ -1,12 +1,12 @@
 <?php
 // include the heading content 
 
-$title="register";
+$title="login";
 include_once "includede/header.php";
 ?>
 <br>
 <br>
-<h2 class="text-center" style="color: rgb(72, 48, 117);">Register</h2>
+<h2 class="text-center" style="color: rgb(72, 48, 117);">Login</h2>
 <br>
 <div class="center" >
     <form action="">
@@ -14,8 +14,7 @@ include_once "includede/header.php";
         <input type="text" id="name">
         <label for="p">pass-word:</label>
         <input type="password">
-        <label for="cp">Confirm-pass-word:</label>
-        <input type="password" id="cp">
+
         <br>
         <input type="button" value="submit">
     </form>
